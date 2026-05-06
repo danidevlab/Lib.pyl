@@ -29,3 +29,16 @@ end
 
 라이브러리는 누구나 개발할 수 있다.
 .pyllib 확장자이며, zip 확장자를 번경한 것이다.
+
+```bash
+├── pyfuctions
+│   ├── 첫번째함수명.py
+│   ├── 두번째함수명.py
+│   └── 세번째함수명.py
+└── info.xml
+```
+
+## 라이브러리 등록 방법
+
+github.com/danidevlab/Lib.pyl/issues에 이슈를 올리면 등록해 드립니다.
+등록이 안되도 import"~~.
