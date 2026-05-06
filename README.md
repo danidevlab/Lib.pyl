@@ -16,15 +16,12 @@ end 으로 코드가 끝남을 알린다.
 ---
 
 ## 예시 코드
-<code>
-  
+
   import"math"
 
   "math"_"plus"_"1+2" ^math 라이브러리야 이건 명령이야. 더해.^
 
   end
-
-</code>
 
 ---
 
@@ -44,4 +41,17 @@ end 으로 코드가 끝남을 알린다.
 ## 라이브러리 등록 방법
 
 github.com/danidevlab/Lib.pyl/issues에 이슈를 올리면 등록해 드립니다.
-등록이 안되도 import"~~.
+등록이 되지 않아도 
+<code>import"ip주소 또는 도메인/디렉터리/라이브러리명.pyllib"</code>
+를 사용해서 불러올 수 있다.
+
+---
+
+# 만든 사람
+
+@danidevlab
+
+## 이메일
+
+daniell0626@naver.com
+danieell0626@gmail.com
