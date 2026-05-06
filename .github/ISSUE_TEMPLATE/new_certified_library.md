@@ -1,5 +1,5 @@
 ---
-name: New Certified Library
+name: 인증된 라이브러리 신청
 about: 인증된 라이브러리 등록 신청을 위한 템플릿입니다.
 title: "[Lib] "
 labels: 'pending-review'
