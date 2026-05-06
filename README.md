@@ -18,11 +18,11 @@ end 으로 코드가 끝남을 알린다.
 ## 예시 코드
 <code>
   
-import"math"
+  import"math"
 
-"math"_"plus"_"1+2" ^math 라이브러리야 이건 명령이야. 더해.^
+  "math"_"plus"_"1+2" ^math 라이브러리야 이건 명령이야. 더해.^
 
-end
+  end
 
 </code>
 
