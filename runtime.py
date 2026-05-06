@@ -15,7 +15,7 @@ class LibPylRuntime:
     
     def load_certified_libraries(self):
         """api/certified_library/librarys.xml에서 인증된 라이브러리 로드"""
-        xml_path = "api/certified_library/librarys.xml"
+        xml_path = "https://github.com/danidevlab/Lib.pyl/blob/27398a34640bcaed78375985a08d5c8a755bd7d1/api/certified_library/librarys.xml"
         
         if not os.path.exists(xml_path):
             print(f"경고: {xml_path}를 찾을 수 없습니다.")
