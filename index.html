@@ -1,12 +1,179 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>Lib.pyL</title>
+    <meta charset="UTF-8">
+    <title>Lib.pyL - Modern Design</title>
+    <style>
+        /* 1. 전체적인 분위기 (배경색과 글자색) */
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #0f172a; /* 진한 남색 배경 */
+            color: #f8fafc; /* 밝은 회색 글자 */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* 2. 상단 메뉴바 */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background-color: #1e293b;
+            border-bottom: 2px solid #334155;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #94a3b8;
+            font-weight: bold;
+            transition: 0.3s; /* 마우스를 올렸을 때 천천히 변하게 해요 */
+        }
+        nav a:hover { color: #38bdf8; } /* 하늘색으로 반짝! */
+
+        /* 3. 메인 소개 섹션 */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+        }
+        .hero h1 { font-size: 3rem; color: #38bdf8; margin: 0; }
+        .hero p { font-size: 1.2rem; color: #94a3b8; }
+
+        /* 4. 컨텐츠 구역 레이아웃 */
+        .container { max-width: 900px; margin: auto; padding: 40px 20px; }
+        section { margin-bottom: 60px; }
+        h3 { border-left: 5px solid #38bdf8; padding-left: 15px; margin-bottom: 30px; }
+
+        /* 5. 다운로드 버튼 상자 */
+        .download-box {
+            background: #1e293b;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.3);
+        }
+        .btn-group .btn {
+            background: #38bdf8;
+            color: #0f172a;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .btn:hover { background: #7dd3fc; }
+
+        /* 6. 깔끔한 표 디자인 */
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: #1e293b; border-radius: 10px; overflow: hidden; }
+        th, td { padding: 15px; border-bottom: 1px solid #334155; text-align: center; }
+        th { background: #334155; color: #38bdf8; }
+
+        /* 7. 하단 후원/문의 카드 */
+        .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+        }
+        .link-btn {
+            display: block;
+            background: #334155;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        .link-btn:hover { background: #475569; }
+    </style>
 </head>
 <body>
-  
-</body>
 
+    <header>
+        <div style="font-size: 1.5rem; font-weight: bold;">Lib.pyL</div>
+        <nav>
+            <a href="#intro">소개</a>
+            <a href="#download">다운로드</a>
+            <a href="#contact">후원/문의</a>
+            <a href="./docs/index.html">문서</a>
+        </nav>
+    </header>
+
+    <div class="hero" id="intro">
+        <h1>Lib.pyL</h1>
+        <p>라이브러리 호출 기반 코딩 언어의 새로운 기준</p>
+    </div>
+
+    <div class="container">
+        <section id="download">
+            <h3>Lib.pyL 다운로드</h3>
+            <div class="download-box">
+                <div><strong>Runtime</strong><br><small style="color:#94a3b8">.pyl 파일 실행 전용</small></div>
+                <div class="btn-group">
+                    <button class="btn">Windows</button>
+                    <button class="btn">Linux</button>
+                </div>
+            </div>
+            <div class="download-box">
+                <div><strong>DevPACK</strong><br><small style="color:#94a3b8">All-in-one 개발 패키지</small></div>
+                <div class="btn-group">
+                    <button class="btn">Windows</button>
+                    <button class="btn">Linux</button>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>빌드</th>
+                        <th>실행</th>
+                        <th>LIDE</th>
+                        <th>오류검사</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Runtime</td>
+                        <td style="color:#ef4444">X</td>
+                        <td style="color:#22c55e">✔</td>
+                        <td style="color:#ef4444">X</td>
+                        <td style="color:#ef4444">X</td>
+                    </tr>
+                    <tr>
+                        <td>DevPack</td>
+                        <td style="color:#22c55e">✔</td>
+                        <td style="color:#22c55e">✔</td>
+                        <td style="color:#22c55e">✔</td>
+                        <td style="color:#22c55e">✔</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h3>후원 및 문의</h3>
+            <div class="footer-grid">
+                <div class="card">
+                    <h4>💰 후원하기</h4>
+                    <p>토스뱅크로 따뜻한 마음을<br>보내주세요.</p>
+                </div>
+                <div class="card">
+                    <h4>📧 문의하기</h4>
+                    <a href="#" class="link-btn">GitHub Issue</a>
+                    <a href="#" class="link-btn">Email 보내기</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
 </html>
